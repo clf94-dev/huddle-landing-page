@@ -82,3 +82,58 @@ sans-serif;
         }
     }
 }
+
+.middle-cont {
+    padding: 3% 7%;
+    .row {
+        margin: 7% 0 15% 0;
+        .text-col {
+            .container {
+                margin: 30% 0;
+                h2 {
+                    font-weight: $font-weight-bold;
+                    font-family: $font-family-heading;
+                    font-size: 35px;
+                    margin: 4% 0;
+                }
+                h5 {
+                    font-weight: $font-weight-normal;
+                    font-family: $font-family-body;
+                    font-size: 18px;
+                    margin: 0 5% 0 0;
+                }
+            }
+        }
+        .col-lg-6 {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.cta-cont {
+    text-align: center;
+    margin-bottom: 10%;
+    .cta-btn {
+        color: white;
+        background-color: $pink;
+        height: 50px;
+        width: 250px;
+        border-radius: 25px;
+        font-size: 15px;
+        font-family: $font-family-body;
+        font-weight: $font-weight-bold;
+        margin: 2% auto;
+        &:hover {
+            color: $pink;
+            background-color: white;
+            border-color: $pink
+        }
+    }
+    h2 {
+        font-family: $font-family-heading;
+        font-weight: $font-weight-bold;
+        font-size: 35px;
+    }
+}
