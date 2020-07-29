@@ -86,6 +86,10 @@
   padding: 3% 7%;
 }
 
+.middle-cont .background-color {
+  background-color: #f5faff;
+}
+
 .middle-cont .row {
   margin: 7% 0 15% 0;
 }
@@ -139,4 +143,58 @@
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 35px;
+}
+
+.footer-cont {
+  background-color: #00252e;
+}
+
+.footer-cont .row {
+  padding: 2% 0;
+  margin: 5% 5% 0 5%;
+}
+
+.footer-cont .row .col-lg-6 h3 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.footer-cont .row .col-lg-6 h6 {
+  margin-top: 2%;
+  color: white;
+  padding-right: 30%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.footer-cont .row .col-lg-6 .row input {
+  margin-top: 1.5%;
+}
+
+.footer-cont .row .col-lg-6 .row button {
+  color: white;
+  background-color: #ff52bf;
+  height: 40px;
+  width: 150px;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin: 2% auto;
+}
+
+.footer-cont .row .col-lg-6 .row button:hover {
+  color: #ff52bf;
+  background-color: white;
+  border-color: #ff52bf;
+}
+
+.footer-cont .row .col-lg-6 .contact-row {
+  margin: 1rem 0 0 0;
+}
+
+.footer-cont .row .col-lg-6 .contact-row img {
+  margin-right: 2%;
+  height: 20px;
+  width: 20px;
 }
