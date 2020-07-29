@@ -1,0 +1,84 @@
+$pink:hsl(322, 100%, 66%);
+$very-dark-cyan:hsl(192, 100%, 9%);
+$very-pale-blue:hsl(207, 100%, 98%);
+$font-weight-normal:400;
+$font-weight-semibold:600;
+$font-weight-bold: 700;
+$font-family-heading:'Poppins',
+sans-serif;
+$font-family-body:'Open Sans',
+sans-serif;
+// ----------------------topbar-----------------------
+.topbar-cont {
+    padding: 3% 7%;
+    .topbar-btn {
+        border-color: $pink;
+        color: $pink;
+        position: absolute;
+        right: 7%;
+        &:hover {
+            background-color: $pink;
+            color: white;
+        }
+    }
+}
+
+.top-cont {
+    padding: 2% 7%;
+    .container {
+        text-align: center;
+        h1 {
+            font-family: $font-family-heading;
+            font-weight: $font-weight-bold;
+            padding: 2% 0 1% 0;
+            font-size: 45px;
+        }
+        h4 {
+            font-family: $font-family-body;
+            padding: 1% 20%;
+            font-size: 18px;
+        }
+        button {
+            color: white;
+            background-color: $pink;
+            height: 50px;
+            width: 250px;
+            border-radius: 25px;
+            font-size: 15px;
+            font-family: $font-family-body;
+            font-weight: $font-weight-bold;
+            margin: 2% auto;
+            &:hover {
+                color: $pink;
+                background-color: white;
+                border-color: $pink
+            }
+        }
+        .mockup-img {
+            padding: 4% 6%;
+            width: 100%;
+        }
+    }
+    .top-row {
+        margin: 2% 0;
+        text-align: center;
+        .col-lg-6 {
+            img {
+                position: relative;
+                right: 12%;
+                margin: 1% 0;
+            }
+            h2 {
+                font-weight: $font-weight-bold;
+                font-family: $font-family-heading;
+                font-size: 70px;
+            }
+            h5 {
+                font-size: 18px;
+                color: $very-dark-cyan;
+                font-weight: $font-weight-normal;
+                font-family: $font-family-body;
+            }
+        }
+    }
+}
