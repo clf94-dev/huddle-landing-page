@@ -83,31 +83,51 @@ sans-serif;
     }
 }
 
+.middle-cont-cyan {
+    background-color: $very-pale-blue;
+}
+
 .middle-cont {
     padding: 3% 7%;
-    .background-color {
-        background-color: $very-pale-blue;
-    }
-    .row {
-        margin: 7% 0 15% 0;
+    .white-middle-row {
         .text-col {
-            .container {
-                margin: 30% 0;
-                h2 {
-                    font-weight: $font-weight-bold;
-                    font-family: $font-family-heading;
-                    font-size: 35px;
-                    margin: 4% 0;
-                }
-                h5 {
-                    font-weight: $font-weight-normal;
-                    font-family: $font-family-body;
-                    font-size: 18px;
-                    margin: 0 5% 0 0;
-                }
+            h2 {
+                font-weight: $font-weight-bold;
+                font-family: $font-family-heading;
+                font-size: 35px;
+                margin: 4% 0;
+            }
+            p {
+                font-weight: $font-weight-normal;
+                font-family: $font-family-body;
+                font-size: 18px;
+                margin: 0 5% 0 0;
             }
         }
-        .col-lg-6 {
+        .img-col {
+            padding: 1%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .background-cyan {
+        .text-col {
+            h2 {
+                font-weight: $font-weight-bold;
+                font-family: $font-family-heading;
+                font-size: 35px;
+                margin: 4% 0;
+            }
+            p {
+                font-weight: $font-weight-normal;
+                font-family: $font-family-body;
+                font-size: 18px;
+                margin: 0 5% 0 0;
+            }
+        }
+        .img-col {
+            padding: 1%;
             img {
                 width: 100%;
             }
@@ -115,9 +135,19 @@ sans-serif;
     }
 }
 
+@media screen and(max-width:789px) {
+    .middle-cont {
+        .background-cyan {
+            margin: 5% auto;
+            flex-flow: column-reverse;
+        }
+    }
+}
+
 .cta-cont {
     text-align: center;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     .cta-btn {
         color: white;
         background-color: $pink;
@@ -143,16 +173,21 @@ sans-serif;
 
 .footer-cont {
     background-color: $very-dark-cyan;
-    .row {
-        padding: 2% 0;
-        margin: 5% 5% 0 5%;
+    padding: 5% 7%;
+    .content-row {
         .col-lg-6 {
+            .contact-row {
+                margin: 1%;
+                img {
+                    margin-top: 15px;
+                }
+            }
             h3 {
                 color: white;
                 font-family: $font-family-body;
                 font-weight: $font-weight-bold;
             }
-            h6 {
+            p {
                 margin-top: 2%;
                 color: white;
                 padding-right: 30%;
@@ -190,4 +225,32 @@ sans-serif;
             }
         }
     }
+    .icons-row {
+        color: white;
+        i {
+            font-size: 25px;
+            margin: 1%;
+            &:hover {
+                color: $pink;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:789px) {
+    .footer-cont {
+        .content-row {
+            flex-flow: column-reverse;
+        }
+    }
+}
+
+.top-bg-pos {
+    position: relative;
+    top: 2%;
+}
+
+.bottom-bg-pos {
+    position: relative;
+    top: -2%;
 }
